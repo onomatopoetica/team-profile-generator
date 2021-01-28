@@ -19,8 +19,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 jumbotron jumbotronHeaderImg image-fluid shadow p-6 bg-light text-center text-white mb-3 team-heading">
-                <h1><b>Bodacious Booleans</b></h1>
-                <h2>Web Dev Team</h2>
+                <h1><span class="jumboHeader"><b>Bodacious Booleans</b></span></h1>
+                <h2><span>Web Dev Team</span></h2>
             </div>
         </div>
     </div>
@@ -40,10 +40,11 @@
                 <div class="card employee-card shadow mb-3">
                     <div class="card-header bg-dark text-white">
                         <h2 class="card-title">{{ name }}</h2>
-                        <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>{{ role }}</h3>
+                        <h3 class="card-title">{{ role }}</h3>
                     </div>
-                    <div class="card-body">
-                        <ul class="list-group">
+                    <div class="card-body" style="font-size: .85rem;">
+                        <ul class="card list-group image-fluid">
+                            <li class="card-img"><img src="https://placeimg.com/230/190/nature/grayscale"></li>
                             <li class="list-group-item">ID: {{ id }}</li>
                             <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
                             <li class="list-group-item">Office number: {{ officeNumber }}</li>
@@ -54,29 +55,13 @@
                 <!-- Render engineer card -->
 
                 <div class="card employee-card shadow mb-3">
-                    <div class="card-header bg-dark text-white">
+                    <div class="card-header bg-info text-white">
                         <h2 class="card-title">{{ name }}</h2>
-                        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>{{ role }}</h3>
+                        <h3 class="card-title">{{ role }}</h3>
                     </div>
-                    <div class="card-body">
-                        <ul class="list-group">
-                            <li class="list-group-item">ID: {{ id }}</li>
-                            <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
-                            <li class="list-group-item">GitHub: <a href="https://github.com/{{ github }}"
-                                    target="_blank" rel="noopener noreferrer">{{ github }}</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Render engineer card -->
-
-                <div class="card employee-card shadow mb-3">
-                    <div class="card-header bg-dark text-white">
-                        <h2 class="card-title">{{ name }}</h2>
-                        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>{{ role }}</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-group">
+                    <div class="card-body" style="font-size: .85rem;">
+                        <ul class="card list-group image-fluid">
+                            <li class="card-img"><img src="https://placeimg.com/230/190/tech/grayscale"></li>
                             <li class="list-group-item">ID: {{ id }}</li>
                             <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
                             <li class="list-group-item">GitHub: <a href="https://github.com/{{ github }}"
@@ -94,12 +79,13 @@
         <div class="row">
             <div class="container-fluid col-md-12 d-flex justify-content-center">
                 <div class="card employee-card shadow mb-3">
-                    <div class="card-header bg-dark text-white">
+                    <div class="card-header bg-info text-white">
                         <h2 class="card-title">{{ name }}</h2>
-                        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>{{ role }}</h3>
+                        <h3 class="card-title">{{ role }}</h3>
                     </div>
-                    <div class="card-body">
-                        <ul class="list-group">
+                    <div class="card-body" style="font-size: .85rem;">
+                        <ul class="card list-group image-fluid">
+                            <li class="card-img"><img src="https://placeimg.com/230/190/tech/grayscale"></li>
                             <li class="list-group-item">ID: {{ id }}</li>
                             <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
                             <li class="list-group-item">GitHub: <a href="https://github.com/{{ github }}"
@@ -111,12 +97,13 @@
                 <!-- Render intern card -->
 
                 <div class="card employee-card shadow mb-3">
-                    <div class="card-header bg-dark text-white">
+                    <div class="card-header bg-warning text-white">
                         <h2 class="card-title">{{ name }}</h2>
-                        <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>{{ role }}</h3>
+                        <h3 class="card-title">{{ role }}</h3>
                     </div>
-                    <div class="card-body">
-                        <ul class="list-group">
+                    <div class="card-body" style="font-size: .85rem;">
+                        <ul class="card list-group image-fluid">
+                            <li class="card-img"><img src="https://placeimg.com/230/190/people/grayscale"></li>
                             <li class="list-group-item">ID: {{ id }}</li>
                             <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
                             <li class="list-group-item">School: {{ school }}</li>

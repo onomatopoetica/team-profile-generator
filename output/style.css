@@ -1,24 +1,39 @@
-* {
-    font-family: 'Roboto', sans-serif;
-}
-
 .jumbotronHeaderImg {
     background-image: url("../assets/code.png");
     background-size: cover;
-    }
+}
 
-div.card-header {
+div.card {
     text-align: center;
-}    
+} 
+
+ul {
+/* List-style-type: none removes bullets from list */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.card-img {
+    width: 100%;
+    object-fit: cover;
+    text-align: center;
+}
 
 /* Media queries */
+
 @media (max-width: 34em) {
     span {
         font-size: 1.5rem;
     }
 
     .jumbotron {
-        padding: 80px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .jumboHeader {
+        font-size: 1.75rem;
     }
     
     div.team-area {
@@ -50,7 +65,7 @@ div.card-header {
     }
 }
 
-@media (min-width: 62.1em) and (max-width: 75em) {  
+@media (min-width: 62.1em) and (max-width: 85em) {  
     .jumbotron {
         padding: 80px;
     }
@@ -67,17 +82,18 @@ div.card-header {
     }
 }
 
-@media (min-width: 75.1em) {  
+@media (min-width: 85.1em) {  
     .jumbotron {
-        padding: 80px;
+        padding: 60px;
     }
     
+    div.row {
+        margin-bottom: 50px;
+    }
+
     div.card {
         margin-left: 5px;
         margin-right:5px;
-    }
-
-    .portfolioFooter {
-        padding-top: 190px;
+        width: 280px;
     }
 }

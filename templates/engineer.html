@@ -1,10 +1,11 @@
 <div class="card employee-card shadow mb-3">
-    <div class="card-header bg-dark text-white">
+    <div class="card-header bg-info text-white">
         <h2 class="card-title">{{ name }}</h2>
-        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>{{ role }}</h3>
+        <h3 class="card-title">{{ role }}</h3>
     </div>
-    <div class="card-body">
-        <ul class="list-group">
+    <div class="card-body" style="font-size: .85rem;">
+        <ul class="card list-group image-fluid">
+            <li class="card-img"><img src="https://placeimg.com/230/190/tech/grayscale"></li>
             <li class="list-group-item">ID: {{ id }}</li>
             <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
             <li class="list-group-item">GitHub: <a href="https://github.com/{{ github }}"
@@ -12,4 +13,3 @@
         </ul>
     </div>
 </div>
-
