@@ -5,25 +5,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My Team</title>
+    <title>Web Dev Team</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c502137733.js"></script>
-    <style>
-        * {
-            font-family: 'Roboto', sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 jumbotron shadow p-6 bg-danger text-white mb-3 team-heading">
-                <h1 class="text-center">My Team</h1>
+            <div class="col-12 jumbotron jumbotronHeaderImg image-fluid shadow p-6 bg-light text-center text-white mb-3 team-heading">
+                <h1><b>Bodacious Booleans</b></h1>
+                <h2>Web Dev Team</h2>
             </div>
         </div>
     </div>
@@ -40,7 +37,7 @@
     <div class="teamContainer">
         <div class="row">
             <div class="container-fluid col-md-12 d-flex justify-content-center">
-                <div class="card employee-card shadow ml-3 mr-3 mb-3">
+                <div class="card employee-card shadow mb-3">
                     <div class="card-header bg-dark text-white">
                         <h2 class="card-title">{{ name }}</h2>
                         <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>{{ role }}</h3>
@@ -56,7 +53,7 @@
 
                 <!-- Render engineer card -->
 
-                <div class="card employee-card shadow mr-3 mb-3">
+                <div class="card employee-card shadow mb-3">
                     <div class="card-header bg-dark text-white">
                         <h2 class="card-title">{{ name }}</h2>
                         <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>{{ role }}</h3>
@@ -73,7 +70,7 @@
 
                 <!-- Render engineer card -->
 
-                <div class="card employee-card shadow mr-3 mb-3">
+                <div class="card employee-card shadow mb-3">
                     <div class="card-header bg-dark text-white">
                         <h2 class="card-title">{{ name }}</h2>
                         <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>{{ role }}</h3>
@@ -96,7 +93,7 @@
     <div class="teamContainer">
         <div class="row">
             <div class="container-fluid col-md-12 d-flex justify-content-center">
-                <div class="card employee-card shadow mr-3 mb-3">
+                <div class="card employee-card shadow mb-3">
                     <div class="card-header bg-dark text-white">
                         <h2 class="card-title">{{ name }}</h2>
                         <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>{{ role }}</h3>
@@ -113,7 +110,7 @@
 
                 <!-- Render intern card -->
 
-                <div class="card employee-card shadow mr-3 mb-3">
+                <div class="card employee-card shadow mb-3">
                     <div class="card-header bg-dark text-white">
                         <h2 class="card-title">{{ name }}</h2>
                         <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>{{ role }}</h3>
@@ -132,7 +129,7 @@
 
     <!-- Footer -->
 
-    <footer class="portfolioFooter mt-2" style="text-align: center; font-size: 1rem;">
+    <footer class="portfolioFooter mb-2 mt-2" style="text-align: center; font-size: 1rem;">
         <div class="text-black">
             <div class="madeWithLove" style="font-size: .85rem;">This team profile was generated with <i
                     class="fa fa-heart pulse" style="color: red;"></i> using <a
