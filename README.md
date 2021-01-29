@@ -43,7 +43,7 @@ Because this application cannot be deployed on GitHub, a walkthrough video demon
 
 #### The following is a brief overview of the application in operation and rendering of generated team profile. See full video demonstration on "See how it works!" link above: 
     
-<img src="https://github.com/onomatopoetica/team-profile-generator/blob/main/assets/team.GIF" alt="screenshot" title="app video" width="500" height="auto"> 
+<img src="https://github.com/onomatopoetica/team-profile-generator/blob/main/assets/teamP.GIF" alt="screenshot" title="app video" width="500" height="auto"> 
 
 #### The following is a screenshot of the application and overview of its functionality: <br>
 
