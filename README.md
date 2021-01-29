@@ -47,7 +47,7 @@ Because this application cannot be deployed on GitHub, a walkthrough video demon
 
 #### The following is a screenshot of the application and overview of its functionality: <br>
 
-<img src="assets/bodaciousProfile.png" alt="app screenshot" width="900" height="auto">
+<img src="assets/bodaciousProfile.png" alt="app screenshot" width="950" height="auto">
     
 ## User Story
 ```
@@ -60,6 +60,7 @@ so that I have quick access to emails and GitHub profiles
 
 ```
 GIVEN a command-line application that accepts user input
+WHEN I install all of the application dependencies, then I run unit tests to confirm they are all passing
 WHEN I am prompted for information about my web development team 
 THEN a high-quality, professional HTML file is generated displaying information about the team manager and team members
 WHEN I use the Inquirer npm package to prompt the user for their email, id, and specific information based on their role with the company (for instance, an intern may provide their school, whereas an engineer may provide their GitHub username)
