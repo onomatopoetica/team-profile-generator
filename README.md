@@ -26,7 +26,7 @@ One of the most important aspects of programming is writing code that is readabl
 
 The project scope was to create an application that dynamically generates a professional HTML file from a user's input. The application prompts the user for information about the team manager and information about the manager's team members. A user can input any number of team members which may be a mix of engineers and interns. When all unit tests have passed and the user has completed building the team, the application will create an HTML file that displays a nicely formatted team roster based on the information provided.
 
-The dependencies are, [jest](https://jestjs.io/) for running the provided tests, and [inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user.
+The dependencies are [jest](https://jestjs.io/) for running the provided tests and [inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user.
 
 The application will be invoked by using the following in the command line:
 
@@ -39,7 +39,7 @@ Because this application cannot be deployed on GitHub, a walkthrough video demon
 
 #### The following is a video of the team profile generator application performance and its functionality:
 
-[See how it works!](https://drive.google.com/file/d/13plXCnBC-A0GcJcrp1zmYb16pvPKj6oj/view?usp=sharing)  
+[See how it works!](https://drive.google.com/file/d/1Gbizw0o125xC71IPfNw98MZZ3E6Cm-xr/view?usp=sharing)  
 
 #### The following is a brief overview of the application in operation and rendering of generated team profile. See full video demonstration on "See how it works!" link above: 
     
