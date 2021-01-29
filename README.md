@@ -47,7 +47,7 @@ Because this application cannot be deployed on GitHub, a walkthrough video demon
 
 #### The following is a screenshot of the application and overview of its functionality: <br>
 
-<img src="assets/bodaciousProfile.png" alt="app screenshot" width="950" height="auto">
+<img src="assets/bodaciousBooleans.png" alt="app screenshot" width="1000" height="auto">
     
 ## User Story
 ```
