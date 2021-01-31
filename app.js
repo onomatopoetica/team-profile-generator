@@ -9,13 +9,13 @@ const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "teamMembers.html");
 
 const render = require("./lib/htmlRenderer");
-
+// Team array for holding all input data for profile
 const teamMembers = [];
 
 console.log("Hi! Let's create your team profile!");
 
 function teamQuestions() {
-
+    // Questions for all team members
     inquirer.prompt([
         {
             type: "input",
@@ -41,6 +41,7 @@ function teamQuestions() {
                 "Intern"]
         },
     ]).then(function (answers) {
+        // if else statements directing which class-specific additional question is asked based upon team member role 
         if (answers.answerRole === "Manager") {
             managerQuestions(answers);
         } else if (answers.answerRole === "Engineer") {
@@ -50,7 +51,7 @@ function teamQuestions() {
         }
     })
 }
-
+// Manager specific question
 function managerQuestions(managerAnswers) {
     inquirer.prompt([
         {
@@ -66,6 +67,7 @@ function managerQuestions(managerAnswers) {
     ]).then(function (answers) {
         const newManager = new Manager(managerAnswers.name, managerAnswers.id, managerAnswers.email, answers.officeNumber);
         teamMembers.push(newManager);
+        // If else to determine whether another team member is to be added to profile or finish and generate team profile
         if (answers.answerAddTeamMember === true) {
             teamQuestions();
         } else {
@@ -74,7 +76,7 @@ function managerQuestions(managerAnswers) {
         }
     })
 }
-
+// Engineer specific question
 function engineerQuestions(engineerAnswers) {
     inquirer.prompt([
         {
@@ -98,7 +100,7 @@ function engineerQuestions(engineerAnswers) {
         }
     })
 }
-
+// Intern specific question
 function internQuestions(internAnswers) {
     inquirer.prompt([
         {
@@ -122,16 +124,16 @@ function internQuestions(internAnswers) {
         }
     })
 }
-
+// Function to generate team profile once all input is entered
 function generateTeam() {
     const html = render(teamMembers);
-    fs.writeFile(outputPath, html, function(error) {
+    fs.writeFile(outputPath, html, function (error) {
         if (error) {
             console.log("Ooops, an error has occurred");
         } else {
             console.log("Go get your team profile!");
-        }     
-    }) 
+        }
+    })
 }
 
 teamQuestions();
