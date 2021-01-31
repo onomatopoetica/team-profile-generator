@@ -41,7 +41,7 @@ function teamQuestions() {
                 "Intern"]
         },
     ]).then(function (answers) {
-        // if else statements directing which class-specific additional question is asked based upon team member role 
+        // If else statements directing which class-specific additional question is asked based upon team member role 
         if (answers.answerRole === "Manager") {
             managerQuestions(answers);
         } else if (answers.answerRole === "Engineer") {
